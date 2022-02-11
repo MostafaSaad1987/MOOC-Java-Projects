@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 import org.junit.Rule;
 
 @Points("04-20.1 04-20.2")
-public class BooksTest {
+public class BookTest {
 
     @Rule
     public MockStdio io = new MockStdio();

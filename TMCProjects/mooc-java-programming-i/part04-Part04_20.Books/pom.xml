@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>tkt</groupId>
     <artifactId>Part04_20.Books</artifactId>
-    <name>Part04_20.Books</name>
+    <name>Part04_20.Book</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     
