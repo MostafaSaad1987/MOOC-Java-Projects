@@ -17,7 +17,7 @@ public class RecordsFromAFile {
                 String name = j[0];
                 int age = Integer.parseInt(j[1]);
 
-                String year = (age > 1) ? " years" : " year";
+                String year = (age == 1) ? " year" : " years";
 
                 System.out.println(name + ", age: " + age + year);
             }
