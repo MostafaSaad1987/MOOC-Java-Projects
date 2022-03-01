@@ -12,7 +12,6 @@ public class HealthStation {
         person.setWeight(person.getWeight() + 1);
     }
 
-    //Misspelled from them. Not me.
     public int weighings() {
         return numOfWeighs;
     }
