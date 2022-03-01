@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class Book {
 
@@ -15,6 +16,14 @@ public class Book {
 
     public int getPublicationYear() {
         return publicationYear;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return publicationYear == book.publicationYear && Objects.equals(name, book.name);
     }
 
 }
