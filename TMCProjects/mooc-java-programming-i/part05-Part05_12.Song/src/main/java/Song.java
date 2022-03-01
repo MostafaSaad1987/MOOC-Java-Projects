@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class Song {
 
@@ -16,5 +17,20 @@ public class Song {
         return this.artist + ": " + this.name + " (" + this.durationInSeconds + " s)";
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if(this == o) return true;
+        if(!(o instanceof Song)){
+            return false;
+        }
 
+        Song compare = (Song) o;
+
+        if(this.artist.equals(compare.artist)
+        && this.name.equals(compare.name)
+        && this.durationInSeconds == compare.durationInSeconds) {
+            return true;
+        }
+        return false;
+    }
 }
