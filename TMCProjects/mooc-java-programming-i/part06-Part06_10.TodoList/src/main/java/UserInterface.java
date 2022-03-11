@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class UserInterface {
     private TodoList todoList;
     private Scanner scan;
-    private boolean stop = false;
 
     public UserInterface(TodoList todoList, Scanner scan) {
         this.todoList = todoList;
@@ -16,17 +15,17 @@ public class UserInterface {
             System.out.print("Command: ");
             input = scan.nextLine();
 
+            if (input.equals("stop")) {
+                break;
+            }
+
             processInput(input);
 
-        } while (!stop);
+        } while (true);
     }
 
     private void processInput(String input) {
         switch (input) {
-            case "stop":
-                stop = true;
-                break;
-
             case "add":
                 System.out.print("To add: ");
                 todoList.add(scan.nextLine());
