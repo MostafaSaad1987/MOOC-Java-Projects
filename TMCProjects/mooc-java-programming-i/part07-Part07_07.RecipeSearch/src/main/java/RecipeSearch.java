@@ -83,8 +83,8 @@ public class RecipeSearch {
                 System.out.println("\nRecipes:");
                 for (Recipe myRecipe : myRecipes) {
                     if (myRecipe.getRecipes().contains(enteredIngredient)) {
-                        for(int i = 0; i < myRecipe.getRecipes().size(); i++){
-                            if(myRecipe.getRecipes().get(i).equals(enteredIngredient)) {
+                        for (int i = 0; i < myRecipe.getRecipes().size(); i++) {
+                            if (myRecipe.getRecipes().get(i).equals(enteredIngredient)) {
                                 System.out.println(myRecipe.getName() + ", cooking time: " + myRecipe.getTimeToCook());
                             }
                         }
